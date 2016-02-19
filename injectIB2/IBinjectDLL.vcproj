@@ -136,7 +136,7 @@
 				FavorSizeOrSpeed="2"
 				PreprocessorDefinitions="NDEBUG;_WIN32_WCE=$(CEVER);UNDER_CE;$(PLATFORMDEFINES);WINCE;_WINDOWS;_USRDLL;RDMINJECTDLL_EXPORTS;$(ARCHFAM);$(_ARCHFAM_);_UNICODE;UNICODE"
 				RuntimeLibrary="0"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
@@ -242,6 +242,10 @@
 			>
 			<File
 				RelativePath=".\childwins.h"
+				>
+			</File>
+			<File
+				RelativePath=".\registry.h"
 				>
 			</File>
 			<File
