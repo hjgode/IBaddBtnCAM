@@ -1,0 +1,55 @@
+;
+; This file was automatically generated using:
+;
+;      WinCE CAB Manager 1, 2, 0, 30
+;      Copyright © 2001-2005 OCP Software, Inc.
+;      All Rights Reserved
+;
+; For more information on this product, please visit:
+;
+;      http://www.ocpsoftware.com
+;
+
+[SOURCE FILE]
+Name=IBaddBtnCAM.cab
+Path=D:\svn\git\IBaddBtnCAM\IBaddBtnCAM.cab
+AllowUninstall=TRUE
+
+[Version]
+Signature="$Chicago$"
+CESignature="$Windows CE$"
+Provider="Honeywell"
+
+[CEStrings]
+AppName="IBaddBtnCAM"
+
+[CEDevice]
+ProcessorType=0
+VersionMin=0.0
+VersionMax=0.0
+BuildMin=0
+BuildMax=0
+
+[SourceDisksNames]
+1=,Source1,,"[WINDOWS]"
+
+[SourceDisksFiles]
+"IBaddBtnCAM.exe"=1
+"IBinjectDLL.dll"=1
+"RDM_msg_queue.exe"=1
+
+[CopyFiles1]
+"IBaddBtnCAM.exe",,,0x00000001
+"IBinjectDLL.dll",,,0x00000001
+"RDM_msg_queue.exe",,,0x00000001
+
+[DestinationDirs]
+CopyFiles1=0,"%CE2%"
+
+[AddRegistry]
+HKLM,"System\Kernel","InjectDLL",0x00010000,"\windows\IBinjectDLL.dll"
+
+[DefaultInstall]
+CopyFiles=CopyFiles1
+AddReg=AddRegistry
+

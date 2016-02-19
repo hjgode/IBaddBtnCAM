@@ -9,8 +9,9 @@ HANDLE	h_INJECT_msgQueue;
 TCHAR*	MODULE_FILENAME=L"\\Program Files\\Intermec Browser\\intermecbrowser.exe"; //which modul to hook
 TCHAR*	waitForClass = L"IntermecBrowser";
 TCHAR*	waitForTitle = NULL;
-TCHAR*	waitForChildClass = NULL; //L"Dock";
-TCHAR*	waitForChildTtile = NULL;
+TCHAR*	waitForClassSecond = NULL; //L"Dock";
+TCHAR*	waitForTtileSecond = NULL;
+BOOL	bSecondWndIsChild = FALSE;
 TCHAR*	slaveExe = L"\\Windows\\IBaddBtnCAM.exe";
 TCHAR*	slaveArgs=L"";
 BOOL	bEnableSubClassWindow=FALSE;
@@ -367,15 +368,15 @@ DWORD WaitForProcessToBeUpAndReadyThread(PVOID)
 
 	//############ use child window or not ###############
 	HWND hChildWin=NULL;
-	if(waitForChildClass!=NULL){
+	if(waitForClassSecond!=NULL){
 		//Find child window to subclass?
 		#if DEBUG
 		wsprintf(szError, L"Looking for child window...");
 		WriteRecordToTextFile(szError);
 		#endif
-		HWND hChildWin=FindChildWindowByParent(hWndWatch, waitForChildClass);
+		HWND hChildWin=FindChildWindowByParent(hWndWatch, waitForClassSecond);
 		do{
-			hChildWin=FindChildWindowByParent(hWndWatch, waitForChildClass);
+			hChildWin=FindChildWindowByParent(hWndWatch, waitForClassSecond);
 			
 			dwRet = WaitForSingleObject(hExitEvent, 1000);
 			if (dwRet == WAIT_TIMEOUT)
@@ -406,7 +407,7 @@ DWORD WaitForProcessToBeUpAndReadyThread(PVOID)
 		wsprintf(szError, L"child window has handle %i (0x%08x)", hChildWin, hChildWin);
 		WriteRecordToTextFile(szError);
 		#endif
-	}//if waitForChildClass
+	}//if waitForClassSecond
 	else{
 		WriteRecordToTextFile(L"NO childwin in use\n");
 	}

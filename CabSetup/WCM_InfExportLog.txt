@@ -1,0 +1,32 @@
+<<< 2-19-2016 10.25.44 >>>
+
+Creating INF files...
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\Honeywell IBaddBtnCAM.inf
+
+Creating directories for IBaddBtnCAM.cab...
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\[WINDOWS]   {EXISTS}
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\[WINDOWS]   {CREATED}
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\[WINDOWS]   {CREATED}
+
+Extracting files for IBaddBtnCAM.cab...
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\[WINDOWS]\IBaddBtnCAM.exe - 44032 bytes
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\[WINDOWS]\IBinjectDLL.dll - 8704 bytes
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM\[WINDOWS]\RDM_msg_queue.exe - 20480 bytes
+
+
+<<< 2-19-2016 10.26.22 >>>
+
+Creating INF files...
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\Honeywell IBaddBtnCAM.inf
+
+Creating directories for IBaddBtnCAM.cab...
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\[WINDOWS]   {EXISTS}
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\[WINDOWS]   {CREATED}
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\[WINDOWS]   {CREATED}
+
+Extracting files for IBaddBtnCAM.cab...
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\[WINDOWS]\IBaddBtnCAM.exe - 44032 bytes
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\[WINDOWS]\IBinjectDLL.dll - 8704 bytes
+    D:\svn\git\IBaddBtnCAM\CabSetup\Honeywell IBaddBtnCAM(1)\[WINDOWS]\RDM_msg_queue.exe - 20480 bytes
+
+
